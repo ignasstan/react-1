@@ -32,21 +32,6 @@ body {
   margin: 0 auto;
 }
 
-.genres {
-  width: 100%;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.genre {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 10px 30px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +46,17 @@ body {
   box-shadow: 5px 5px 115px -14px black;
   background: rgb(61, 52, 52);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 426px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+@media only screen and (max-width: 769px) {
+  .card {
+    width: calc(50% - 40px);
+  }
 }
 
 .card__image {
@@ -148,4 +144,13 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: #bdbcdd;
+}
+
+.genres {
+  width: 100%;
+  text-align: center;
+}
+
+.genre {
+  display: inline-block;
 }
